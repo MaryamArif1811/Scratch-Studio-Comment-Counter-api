@@ -1,0 +1,14 @@
+{
+  "name": "scratch-comment-api",
+  "version": "1.0.0",
+  "description": "API that counts all Scratch studio comments including replies",
+  "main": "server.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  }
+}
