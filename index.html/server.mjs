@@ -63,10 +63,6 @@ app.get("/studio/:id/comments", async (req, res) => {
   }
 });
 
-app.get("/", (req, res) => {
-  res.send("Studio Comment Counter API is running! Use /studio/:id/comments to get comment counts.");
-});
-
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server listening at http://0.0.0.0:${port}`);
 });
