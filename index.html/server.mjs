@@ -57,12 +57,27 @@ app.get("/studio/:id/comments", async (req, res) => {
   const studioId = req.params.id;
 
   try {
-    const total = await getAllComments(studioId);
-    res.json({ studio: studioId, totalComments: total });
-  } catch (e) {
-    res.json({ error: "Failed to fetch comments", details: e.toString() });
-  }
-});
+  const total = await getAllComments(studioId);
+
+  res.json({
+    studio: studioId,
+    totalComments: total,
+    warning: "⚠️ This API may be slow sometimes if fewer people use it. Please be patient.",
+    author: "@MaryamArif_1811",
+    profile: "https://scratch.mit.edu/users/MaryamArif_1811/"
+  });
+
+} catch (e) {
+
+  res.json({
+    error: "Failed to fetch comments",
+    details: e.toString(),
+    warning: "⚠️ This API may be slow sometimes if fewer people use it. Please be patient.",
+    author: "@MaryamArif_1811",
+    profile: "https://scratch.mit.edu/users/MaryamArif_1811/"
+  });
+
+}
 
 app.listen(port, "0.0.0.0", () => {
   console.log(`Server listening at http://0.0.0.0:${port}`);
