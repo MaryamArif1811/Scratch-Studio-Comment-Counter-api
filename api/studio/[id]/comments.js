@@ -1,5 +1,3 @@
-import fetch from "node-fetch";
-
 async function getAllComments(studioId) {
   let total = 0;
   let offset = 0;
