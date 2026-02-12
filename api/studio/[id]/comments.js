@@ -47,7 +47,7 @@ export default async function handler(req, res) {
       totalComments: total,
       author: "@MaryamArif_1811",
       profile: "https://scratch.mit.edu/users/MaryamArif_1811/"
-      warning: "⚠️ WARNING: THIS API IS NOT MADE BY SCRATCH TEAM AND IS NOT AFFILIATED IN ANY WAY WITH SCRATCH; HOWEVER THIS API IS MADE BY A YOUNG SCRATCHER ON 23/01/2026."
+      warning: "⚠️ WARNING: THIS API IS NOT MADE BY SCRATCH TEAM AND IS NOT AFFILIATED IN ANY WAY WITH SCRATCH; HOWEVER IT IS MADE BY A YOUNG SCRATCHER ON 23/01/2026."
     });
 
   } catch (e) {
@@ -56,7 +56,7 @@ export default async function handler(req, res) {
       details: e.toString(),
       author: "@MaryamArif_1811",
       profile: "https://scratch.mit.edu/users/MaryamArif_1811/"
-      warning: "⚠️ WARNING: THIS API IS NOT MADE BY SCRATCH TEAM AND IS NOT AFFILIATED IN ANY WAY WITH SCRATCH; HOWEVER THIS API IS MADE BY A YOUNG SCRATCHER ON 23/01/2026."
+      warning: "⚠️ WARNING: THIS API IS NOT MADE BY SCRATCH TEAM AND IS NOT AFFILIATED IN ANY WAY WITH SCRATCH; HOWEVER IT IS MADE BY A YOUNG SCRATCHER ON 23/01/2026."
     });
   }
 }
