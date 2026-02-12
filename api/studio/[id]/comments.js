@@ -44,7 +44,7 @@ export default async function handler(req, res) {
       studio: id,
       totalComments: total,
       author: "@MaryamArif_1811",
-      profile: "https://scratch.mit.edu/users/MaryamArif_1811/"
+      profile: "https://scratch.mit.edu/users/MaryamArif_1811/",
       warning: "⚠️ WARNING: THIS API IS NOT MADE BY SCRATCH TEAM AND IS NOT AFFILIATED IN ANY WAY WITH SCRATCH; HOWEVER IT IS MADE BY A YOUNG SCRATCHER ON 23/01/2026."
     });
 
@@ -53,7 +53,7 @@ export default async function handler(req, res) {
       error: "Failed to fetch comments",
       details: e.toString(),
       author: "@MaryamArif_1811",
-      profile: "https://scratch.mit.edu/users/MaryamArif_1811/"
+      profile: "https://scratch.mit.edu/users/MaryamArif_1811/",
       warning: "⚠️ WARNING: THIS API IS NOT MADE BY SCRATCH TEAM AND IS NOT AFFILIATED IN ANY WAY WITH SCRATCH; HOWEVER IT IS MADE BY A YOUNG SCRATCHER ON 23/01/2026."
     });
   }
